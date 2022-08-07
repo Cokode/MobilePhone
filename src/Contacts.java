@@ -57,15 +57,12 @@ public class Contacts {
 
     public void modifyContact0(String oldNumber, String newNumber) {
         int oldNumberIndex = numberList.indexOf(oldNumber);
-        for (int i = 0; i < numberList.size(); i++) {
-            if (oldNumberIndex == i) {
+            if (oldNumberIndex >= 0) {
                 numberList.set(oldNumberIndex, newNumber);
                 System.out.println("contact info successfully modified.");
-                break;
             } else {
                 System.out.println("cannot find contacts in mobile Phone");
             }
-        }
     }
 
     public void modifyContact2(String oldName, String newName) {
