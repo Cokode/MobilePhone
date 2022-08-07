@@ -71,7 +71,7 @@ public class MobilePhone {
                 System.out.println("Action aborted");
             }
         } else {
-            System.out.println("this contact does nto exist");
+            System.out.println("this contact does not exist");
         }
     }
 
