@@ -4,8 +4,8 @@ import java.util.Scanner;
 
 public class Contacts {
 
-    private static ArrayList<String> namesList = new ArrayList<String>();
-    private static ArrayList<String> numberList = new ArrayList<String>();
+    private static ArrayList<String> namesList = new ArrayList<>();
+    private static ArrayList<String> numberList = new ArrayList<>();
 
     public void myContactNames() {
         System.out.println("You have " + namesList.size() + " contact in your contact list");
@@ -20,9 +20,10 @@ public class Contacts {
         System.out.println("Type name to search for");
         String name = scanner.nextLine();
         if(namesList.contains(name)){
-            System.out.println("Yes. It does contain " + name);
+            System.out.println(name + " found in your contacts");
+            oneContact2(name);
         }else {
-            System.out.println("Nope!");
+            System.out.println("Nope! Not found");
         }
     }
 
