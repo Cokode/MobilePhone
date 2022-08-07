@@ -48,8 +48,8 @@ public class Contacts {
         } else if (checkName && !checkNumber) {
             System.out.println("""
         Contact name already exist.
-        press Yes to continue save as new contact with new number
-        No to cancel
+        press Yes to save as new contact with new number
+        press No to cancel
         """);
             String input = scanner.nextLine();
             if(Objects.equals(input, "Yes")) {
@@ -59,20 +59,19 @@ public class Contacts {
             } else{
                 System.out.println("action canceled!");
             }
-
         } else{
                 System.out.println("This contact name and number already exist in contact");
         }
     }
 
-    public void modifyContact0(String oldNumber, String newNumber) {
-        int oldNumberIndex = numberList.indexOf(oldNumber);
-            if (oldNumberIndex >= 0) {
-                numberList.set(oldNumberIndex, newNumber);
-                System.out.println("contact info successfully modified.");
-            } else {
-                System.out.println("cannot find contacts in mobile Phone");
-            }
+    public void modifyContact02(String oldNumber, String newNumber) {
+        int oldNumberIndex = namesList.indexOf(oldNumber);
+        if (oldNumberIndex >= 0) {
+            numberList.set(oldNumberIndex, newNumber);
+            System.out.println("contact info successfully modified.");
+        } else {
+            System.out.println("cannot find contacts in mobile Phone");
+        }
     }
 
     public void modifyContact2(String oldName, String newName) {

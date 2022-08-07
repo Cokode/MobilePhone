@@ -20,7 +20,10 @@ public class Main {
                 case 3 -> MobilePhone.modifyContact();
                 case 4 -> MobilePhone.removeContact();
                 case 5 -> MobilePhone.searchContacts();
-                case 7 -> quit = true;
+                case 7 -> {
+                    System.out.println("Shutting down...");
+                    quit = true;
+                }
                 case 6 -> newContacts.containsName();
             }
         }

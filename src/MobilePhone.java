@@ -45,12 +45,10 @@ public class MobilePhone {
         myScanner.nextLine();
 
         if (answer == 1) {
-            System.out.println("Type old number ");
-            String oldNumber = myScanner.nextLine();
             System.out.println("Type new number ");
             String newNumber = myScanner.nextLine();
+            myContacts.modifyContact02(oldName, newNumber);
             myContacts.modifyContact2(oldName, newName);
-            myContacts.modifyContact0(oldNumber, newNumber);
         } else if (answer == 2) {
             myContacts.modifyContact2(oldName, newName);
         } else {
