@@ -37,7 +37,6 @@ public class Contacts {
         }
     }
 
-
     public void addNamesAndPhoneNumber(String name, String number) {
         Scanner scanner = new Scanner(System.in);
         boolean checkName = namesList.contains(name);

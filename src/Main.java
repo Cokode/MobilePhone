@@ -10,7 +10,7 @@ public class Main {
         boolean quit = false;
 
         while (!quit) {
-            System.out.println("Choose Menu option (0 to display menu list)");
+            System.out.println("\nChoose Menu option \n(0 to display menu list)");
             int choice = isScanner.nextInt();
             isScanner.nextLine();
             switch (choice) {
@@ -21,7 +21,8 @@ public class Main {
                 case 4 -> MobilePhone.removeContact();
                 case 5 -> MobilePhone.searchContacts();
                 case 7 -> {
-                    System.out.println("Shutting down...");
+                    System.out.println("Shutting down...\n" +
+                            "Goodbye.");
                     quit = true;
                 }
                 case 6 -> newContacts.containsName();
