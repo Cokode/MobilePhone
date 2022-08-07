@@ -16,7 +16,8 @@ public class MobilePhone {
         press 3 to modify contact
         press 4 to remove a contact
         press 5 to find contact
-        press 6 to quit the application""");
+        press 6 to search names in phonebook
+        press 7 to quit the application \n""");
     }
 
     public static void addContacts() {

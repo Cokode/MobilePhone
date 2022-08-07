@@ -15,6 +15,16 @@ public class Contacts {
             System.out.println(j + 1 + ". " + "Name: " + namesList.get(j) + " Phone No: " + numberList.get(j));
         }
     }
+    public void containsName(){
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Type name to search for");
+        String name = scanner.nextLine();
+        if(namesList.contains(name)){
+            System.out.println("Yes. It does contain " + name);
+        }else {
+            System.out.println("Nope!");
+        }
+    }
 
     public void oneContact2(String nameIndex){
         int index = namesList.indexOf(nameIndex);

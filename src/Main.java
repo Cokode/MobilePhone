@@ -3,6 +3,7 @@ import java.util.Scanner;
 public class Main {
     private static Scanner isScanner = new Scanner(System.in);
     private static MobilePhone myMobilPhone = new MobilePhone();
+    private static Contacts newContacts = new Contacts();
 
     public static void main (String[] args) {
         MobilePhone.printMenu();
@@ -19,7 +20,8 @@ public class Main {
                 case 3 -> MobilePhone.modifyContact();
                 case 4 -> MobilePhone.removeContact();
                 case 5 -> MobilePhone.searchContacts();
-                case 6 -> quit = true;
+                case 7 -> quit = true;
+                case 6 -> newContacts.containsName();
             }
         }
     }
